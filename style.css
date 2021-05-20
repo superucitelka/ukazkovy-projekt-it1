@@ -1,0 +1,15 @@
+.bg-info {
+    background-color:  rgb(34, 98, 194) !important;
+}
+
+.text-info {
+    color: rgb(34, 98, 194) !important;
+}
+
+.bg-danger {
+    background-color:  rgb(219, 84, 43) !important;
+}
+
+.text-danger {
+    color: rgb(219, 84, 43) !important;
+}

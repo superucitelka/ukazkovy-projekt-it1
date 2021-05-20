@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../css/muj.css">
+    <title>Historický kvíz</title>
+</head>
+
+<body>
+    <!-- *** b4-navbar-placement *** -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger sticky-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <header class="jumbotron jumbotron-fluid bg-danger">
+        <div class="container">
+            <h1 class="text-white display-2">Historický kvíz
+                <small>test z českých dějin</small>
+            </h1>
+            <p>Otestujte své znalosti pomocí formuláře.</p>
+        </div>
+    </header>
+    <main class="container">
+        <form action="" method="POST">
+            <!-- Formulářový prvek input-text -->
+            <p class="alert alert-warning otazka">1. Která listina byla vydána v roce 1212?</p>
+            <div class="form-group row">
+                <label for="listina" class="col-sm-3 col-form-label">Slavná listina</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" name="listina" id="listina" placeholder="Zadejte tři slova">
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse">Zlatá bula sicilská</p>
+            <hr>
+            <!-- Formulářový prvek input-number -->
+            <p class="alert alert-warning otazka">2. Kdy byla založena Univerzita Karlova?</p>
+            <div class="form-group row">
+                <label for="univerzita" class="col-sm-3 col-form-label">Rok založení UK</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" name="univerzita" min="1000" max="2021" id="univerzita" value="1800">
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse">1348</p>
+            <hr>
+            <!-- Formulářový prvek select -->
+            <p class="alert alert-warning otazka">3. Kdo byl "král železný a zlatý"?</p>
+            <div class="form-group row">
+                <label for="kral" class="col-sm-3 col-form-label">Jméno krále</label>
+                <div class="col-sm-3">
+                      <select class="form-control" name="kral" id="kral">
+                        <option>Přemysl Otakar I.</option>
+                        <option>Přemysl Otakar II.</option>
+                        <option selected>Václav II.</option>
+                        <option>Václav III.</option>
+                      </select>
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse">Přemysl Otakar II.</p>
+            <hr>            
+            <div class="form-group row">
+                <div class="offset-sm-2 col-sm-10">
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target=".odpoved">Vyhodnotit kvíz</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer class="container-fluid bg-dark mt-4">
+        <div class="row text-muted p-5">
+            <div class="col-sm-4 border-right">
+                <p class="text-white">
+                    <i class="fa fa-address-book fa-3x float-left p-2 text-danger" data-toggle="collapse"
+                        data-target="#skryj"></i>
+                    <span class="collapse" id="skryj">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consectetur illo eligendi ipsam sequi totam
+                        tenetur in aliquam nobis dolorem impedit, qui quos laudantium minus amet deleniti eum dolorum
+                        temporibus
+                        nisi adipisci nostrum. Quaerat tempora modi porro iure voluptatum vel praesentium nihil, neque,
+                        quam
+                        pariatur repudiandae, mollitia necessitatibus quibusdam vero assumenda.</span>
+                </p>
+
+            </div>
+            <div class="col-sm-6 border-right">
+                <p>
+                    <i class="fa fa-angle-right fa-3x float-left p-2"></i> Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Distinctio recusandae quas saepe. Nobis
+                    tempore minima sit quod, provident, quidem aliquam delectus corrupti veniam dolorum voluptates
+                    commodi
+                    natus, deserunt placeat magnam odit incidunt fugit nemo harum? Nostrum quas tenetur cumque
+                    voluptate!</span>
+                </p>
+                <p>
+                    <i class="fa fa-angle-right fa-3x float-left p-2"></i> Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Fugit accusantium dicta doloremque enim
+                    nisi non, maxime minima tempora officia suscipit facilis accusamus odio. Delectus dolorum, voluptate
+                    sequi optio laboriosam dignissimos.</p>
+            </div>
+            <div class="col-sm-2">
+                <h5 class="border-bottom border-info p-2">Sociální sítě</h5>
+                <p class="text-info">
+                    <i class="fa fa-facebook-official fa-3x float-left p-2"></i>
+                    <i class="fa fa-twitter-square fa-3x float-left p-2"></i>
+                    <i class="fa fa-instagram fa-3x float-left p-2"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="holder/holder.min.js"></script>
+    <script>
+        Holder.addTheme("dark", {
+            bg: "#222",
+            fg: "#aaa",
+            size: 12,
+            font: "Arial",
+            fontweight: "normal"
+        });
+        Holder.addTheme("pink", {
+            bg: "violet",
+            fg: "white",
+            size: 12,
+            font: "FontAwesome",
+            fontweight: "bold"
+        });
+    </script>
+
+</body>
+
+</html>

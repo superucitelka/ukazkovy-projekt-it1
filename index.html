@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+
+<body>
+    <!-- *** b4-navbar-placement *** -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger sticky-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <header class="jumbotron jumbotron-fluid bg-danger">
+        <div class="container">
+            <h1 class="text-white display-2">Bootstrap 4
+                <small>front-end framework</small>
+            </h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on
+                the web.</p>
+        </div>
+    </header>
+    <main class="container">
+        <div class="alert alert-danger" role="alert">
+            <strong>Pozor na tuto chybu!</strong>
+            <a href="#" class="alert-link">klikni zde</a>
+        </div>
+
+
+        <div class="alert alert-info" role="alert">
+            <h4 class="alert-heading">Upozorňujeme: bude následovat animovaný carousel!</h4>
+            <p>Bootstrap 4 nabízí využití prvku alert</p>
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, illum?</p>
+        </div>
+
+
+        <div id="carouselId" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselId" data-slide-to="1"></li>
+                <li data-target="#carouselId" data-slide-to="2"></li>
+                <li data-target="#carouselId" data-slide-to="3"></li>
+                <li data-target="#carouselId" data-slide-to="4"></li>
+                <li data-target="#carouselId" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img data-src="holder.js/100px600?theme=dark" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img data-src="holder.js/100px600?theme=pink" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img data-src="holder.js/900x600?theme=industrial&amp;text=Third \n slide&amp;outline=yes" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/skola-banner-01.jpg" alt="Škola" class="img-responsive">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/skola-banner-02.jpg" alt="Škola" class="img-responsive">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/skola-banner-03.jpg" alt="Škola" class="img-responsive">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <hr>
+        <div class="shadow p-4 mb-4 bg-info">
+            <h2 class="text-white display-4">Automatická sloupcová sazba</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md">
+                <h2>Malá písmena, zarovnání do bloku</h2>
+                <p class="text-lowercase text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam fuga, quisquam rerum harum doloremque est
+                    iure consequuntur dolorem et ad consequatur expedita ex quia quos. Quaerat pariatur est inventore laudantium,
+                    enim deleniti. Velit quisquam omnis aspernatur dicta sit debitis? Nobis pariatur itaque a repudiandae
+                    quasi autem eum expedita facilis asperiores.</p>
+            </div>
+            <div class="col-sm">
+                <h2>Velká písmena, tenké písmo</h2>
+                <p class="text-uppercase font-weight-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam fuga, quisquam rerum harum doloremque est
+                    iure consequuntur dolorem et ad consequatur expedita ex quia quos. Quaerat pariatur est inventore laudantium,
+                    enim deleniti. Velit quisquam omnis aspernatur dicta sit debitis? Nobis pariatur itaque a repudiandae
+                    quasi autem eum expedita facilis asperiores.</p>
+            </div>
+            <div class="col-sm">
+                <h2>Kapitálky, tučné písmo</h2>
+                <p class="text-capitalize font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repudiandae voluptatum adipisci tenetur laboriosam
+                    animi, enim cupiditate iste minima repellat.</p>
+                <p class="lead">Zvýrazněný odstavec</p>
+                <code>Lorem <kbd>CTRL + ALT + DEL</kbd>ipsum dolor sit, amet consectetur adipisicing elit. Animi eligendi inventore autem officiis corporis suscipit quasi nobis error dolores reiciendis.</code>
+            </div>
+        </div>
+
+        <blockquote class="blockquote border border-info p-4 collapse" id="citat">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, vero expedita doloribus eum soluta
+                illo! Optio animi nihil facilis voluptates incidunt. Molestias quibusdam consequuntur iusto ex vero natus,
+                unde officiis.</p>
+            <footer class="blockquote-footer">Brouk Pytlík</footer>
+        </blockquote>
+        <p>
+            <button data-toggle="collapse" data-target="#citat" class="btn btn-info">Zobrazit / skrýt citát</button>
+        </p>
+
+        <hr>
+
+        <div class="shadow p-4 mb-4 bg-success">
+            <h2 class="text-white display-3">Responzivní sloupcová sazba</h1>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="card text-left">
+                    <img class="card-img-top" src="img/vltava-small.jpg" alt="" class="img-responsive">
+                    <div class="card-body">
+                        <h4 class="card-title">Vltava
+                            <span class="badge badge-secondary">New</span>
+                        </h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque rerum blanditiis iusto inventore
+                            quasi assumenda sit, enim dolor! Nesciunt, quia.</p>
+                        <button type="button" class="btn btn-info">
+                            Známka
+                            <span class="badge badge-dark">1</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="card text-left">
+                    <img class="card-img-top" src="img/karluv-most-small.jpg" alt="" class="img-responsive">
+                    <div class="card-body">
+                        <h4 class="card-title">Karlův most</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque rerum blanditiis iusto inventore
+                            quasi assumenda sit, enim dolor! Nesciunt, quia.</p>
+                        <p>
+                            <span class="badge badge-success">Doporučujeme</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="card text-left">
+                    <img class="card-img-top" src="img/prazsky-hrad-small.jpg" alt="" class="img-responsive">
+                    <div class="card-body">
+                        <h4 class="card-title">Pražský hrad</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque rerum blanditiis iusto inventore
+                            quasi assumenda sit, enim dolor! Nesciunt, quia.</p>
+                        <p>
+                            <span class="badge badge-pill badge-danger">Kontrolovaný vstup</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="card text-left">
+                    <img class="card-img-top" src="img/stare-mesto-small.jpg" alt="" class="img-responsive">
+                    <div class="card-body">
+                        <h4 class="card-title">Staré město pražské</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque rerum blanditiis iusto inventore
+                            quasi assumenda sit, enim dolor! Nesciunt, quia.</p>
+                        <button type="button" class="btn btn-primary">
+                            Hodnocení
+                            <span class="badge badge-light">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-empty"></i>
+                            </span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="shadow-lg p-4 mb-4 bg-dark rounded">
+            <h2 class="text-white display-5">Flexibilní uspořádání prvků</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="d-flex flex-row-reverse bg-secondary mb-3">
+                    <div class="w-25 p-2 bg-info">
+                        <h3>Flex item 1</h3>
+                    </div>
+                    <div class="w-25 p-2 bg-warning">
+                        <h3>Flex item 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam, laborum culpa, totam
+                            ex id nihil rem tempora eum aut neque in delectus. Laboriosam ullam libero ex quo, facilis ipsam
+                            suscipit blanditiis! Odio explicabo cum maxime reiciendis, totam consequatur soluta aperiam aut
+                            perspiciatis dicta nesciunt, quasi, natus ab expedita obcaecati.</p>
+                    </div>
+                    <div class="w-25 p-2 bg-success">
+                        <img class="card-img-top" src="holder.js/100px200?theme=industrial" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shadow-lg p-4 mb-4 bg-info rounded">
+            <h2 class="display-5 text-white">Tabulka a média</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead class="bg-warning text-danger">
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>Mary</td>
+                            <td>Moe</td>
+                            <td>mary@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>July</td>
+                            <td>Dooley</td>
+                            <td>july@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Media bottom -->
+                <div class="media">
+                    <img src="img/avatar1.png" class="align-self-center mr-3 rounded" style="width:60px">
+                    <div class="media-body">
+                        <h4 class="border border-danger rounded-left text-danger p-2">Ferda Mravenec</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laudantium cum consequuntur nostrum
+                            sequi quia culpa nam? A mollitia quam odio necessitatibus cupiditate totam, aliquid qui eos,
+                            ducimus excepturi beatae exercitationem aspernatur, alias repellat itaque expedita! Itaque quas
+                            architecto velit?</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="media">
+                    <img src="img/avatar2.png" class="align-self-center mr-3 rounded" style="width:60px">
+                    <div class="media-body">
+                        <h4 class="bg-danger rounded-left text-white p-2">Brouk Pytlík</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laudantium cum consequuntur nostrum
+                            sequi quia culpa nam? A mollitia quam odio necessitatibus cupiditate totam, aliquid qui eos,
+                            ducimus excepturi beatae exercitationem aspernatur, alias repellat itaque expedita! Itaque quas
+                            architecto velit?</p>
+                            <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, deleniti.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                </ul>
+            
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h3 class="mb-3 mt-2 text-uppercase text-center text-info">Diskusní příspěvky</h3>
+                <div class="media border p-3">
+                    <img src="img/avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+                    <div class="media-body">
+                        <h4>John Doe
+                            <small>
+                                <i>Posted on February 19, 2016</i>
+                            </small>
+                        </h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore aperiam molestiae dolorem saepe architecto sed aliquid odit sit, impedit esse molestias culpa tempora laudantium consequuntur nostrum aut expedita dolores itaque quibusdam ab! Molestias, quia eum doloremque laborum corporis laudantium soluta. Repellat dolorem accusantium nulla ut voluptatum neque quae ipsa cumque?</p>
+                        <div class="media p-3">
+                            <img src="img/avatar2.png" alt="Jane Doe" class="mr-3 mt-3 rounded-circle" style="width:45px;">
+                            <div class="media-body">
+                                <h4>Jane Doe
+                                    <small>
+                                        <i>Posted on February 20 2016</i>
+                                    </small>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam fuga quaerat velit veniam
+                                    culpa doloremque ut nulla commodi nisi deserunt.</p>
+                            </div>
+                        </div>
+                        <div class="media p-3">
+                            <img src="img/avatar1.png" alt="Jane Doe" class="mr-3 mt-3 rounded-circle" style="width:45px;">
+                            <div class="media-body">
+                                <h4>Jane Doe
+                                    <small>
+                                        <i>Posted on February 20 2016</i>
+                                    </small>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, suscipit!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="container-fluid bg-dark mt-4">
+        <div class="row text-muted p-5">
+            <div class="col-sm-4 border-right">
+                <p class="text-white">
+                    <i class="fa fa-address-book fa-3x float-left p-2 text-danger" data-toggle="collapse" data-target="#skryj"></i>
+                    <span class="collapse" id="skryj">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur illo eligendi ipsam sequi totam
+                        tenetur in aliquam nobis dolorem impedit, qui quos laudantium minus amet deleniti eum dolorum temporibus
+                        nisi adipisci nostrum. Quaerat tempora modi porro iure voluptatum vel praesentium nihil, neque, quam
+                        pariatur repudiandae, mollitia necessitatibus quibusdam vero assumenda.</span>
+                </p>
+
+            </div>
+            <div class="col-sm-6 border-right">
+                <p>
+                    <i class="fa fa-angle-right fa-3x float-left p-2"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio recusandae quas saepe. Nobis
+                    tempore minima sit quod, provident, quidem aliquam delectus corrupti veniam dolorum voluptates commodi
+                    natus, deserunt placeat magnam odit incidunt fugit nemo harum? Nostrum quas tenetur cumque voluptate!</span>
+                </p>
+                <p>
+                    <i class="fa fa-angle-right fa-3x float-left p-2"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit accusantium dicta doloremque enim
+                    nisi non, maxime minima tempora officia suscipit facilis accusamus odio. Delectus dolorum, voluptate
+                    sequi optio laboriosam dignissimos.</p>
+            </div>
+            <div class="col-sm-2">
+                <h5 class="border-bottom border-info p-2">Sociální sítě</h5>
+                <p class="text-info">
+                    <i class="fa fa-facebook-official fa-3x float-left p-2"></i>
+                    <i class="fa fa-twitter-square fa-3x float-left p-2"></i>
+                    <i class="fa fa-instagram fa-3x float-left p-2"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="holder/holder.min.js"></script>
+    <script>
+        Holder.addTheme("dark", {
+            bg: "#222",
+            fg: "#aaa",
+            size: 12,
+            font: "Arial",
+            fontweight: "normal"
+        });
+        Holder.addTheme("pink", {
+            bg: "violet",
+            fg: "white",
+            size: 12,
+            font: "FontAwesome",
+            fontweight: "bold"
+        });
+
+    </script>
+
+</body>
+
+</html>
